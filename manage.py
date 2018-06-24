@@ -15,8 +15,8 @@
 """
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
-from omnipotent_reptiles_v1 import db
 from omnipotent_reptiles_v1 import create_app
+from omnipotent_reptiles_v1 import db
 
 app = create_app()
 manager = Manager(app)
@@ -40,6 +40,20 @@ def custom(arg):
     """
     print(arg)
 
+
+@manager.option('-n', '--name', dest='name')
+@manager.option('-u', '--url', dest='url')
+def cmd(name, url):
+    """
+    自定义命令
+    执行： python manage.py  cmd -n wupeiqi -u http://www.oldboyedu.com
+    :param name:
+    :param url:
+    :return:
+    """
+    print(name, url)
+
+# 启动命令：python manage.py runserver -h 127.0.0.1 -p 8080
 
 if __name__ == "__main__":
     manager.run()

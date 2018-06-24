@@ -24,6 +24,7 @@ class BaseConfig(object):
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@127.0.0.1:3306/s9?charset=utf8'
     SQLALCHEMY_POOL_SIZE = 10
     SQLALCHEMY_MAX_OVERFLOW = 5
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 class ProConfig(BaseConfig):

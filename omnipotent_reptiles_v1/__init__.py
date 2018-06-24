@@ -10,12 +10,12 @@ from flask import Flask
 from flask_session import Session
 from flask_sqlalchemy import SQLAlchemy
 
+# 导入并实例化一个SQLAlchemy对象
+db = SQLAlchemy()
+
 from .models import *
 from .views.user import us
 from .views.account import ac
-
-# 导入并实例化一个SQLAlchemy对象
-db = SQLAlchemy()
 
 
 def create_app():

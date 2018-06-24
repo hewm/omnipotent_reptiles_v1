@@ -14,7 +14,7 @@
         2、   
 """
 from flask import Blueprint
-
+from omnipotent_reptiles_v1 import db
 ac = Blueprint('ac', __name__)
 
 

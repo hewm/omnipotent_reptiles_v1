@@ -13,15 +13,16 @@
         1、
         2、   
 """
+import requests
 from flask import Blueprint
+from flask import request, render_template, redirect
 from omnipotent_reptiles_v1 import db
 from omnipotent_reptiles_v1 import models
-
 
 us = Blueprint('us', __name__)
 
 
-@us.route('/index')
+@us.route('/index', methods=['GET', 'POST'])
 def index():
     # db.session.add(models.Userinfo(name='123',pwd='sdad'))
     # db.session.commit()
