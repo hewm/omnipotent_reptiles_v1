@@ -1,0 +1,13 @@
+1、打包当前项目安装的组件
+    安装：pip install pipreqs
+    使用：pipreqs ./ --encoding=utf-8
+    安装requirements.txt包内文件
+    pip install -r requirements.txt
+
+2、创建虚拟环境
+    安装 pip3 install virtualenv
+    创建:1、自行在其他盘创建envs文件夹
+         2、今日envs文件夹
+         3、执行 virtualenv env1  --no-site-packages  创建虚拟环境
+         4、cd Scripts  进入Scripts文件夹
+         5、activate   初始化
