@@ -14,8 +14,9 @@
         2、   
 """
 from sqlalchemy import Column
-from sqlalchemy import Integer, String, Text, Date, DateTime
 from sqlalchemy import create_engine
+from sqlalchemy import Integer, String, Text, Date, DateTime
+
 from omnipotent_reptiles_v1 import db
 
 

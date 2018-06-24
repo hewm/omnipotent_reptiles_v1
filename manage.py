@@ -13,11 +13,10 @@
         1、
         2、   
 """
-
-from omnipotent_reptiles_v1 import create_app
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from omnipotent_reptiles_v1 import db
+from omnipotent_reptiles_v1 import create_app
 
 app = create_app()
 manager = Manager(app)

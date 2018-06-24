@@ -14,8 +14,9 @@
         2、   
 """
 from flask import Blueprint
-from omnipotent_reptiles_v1 import models
 from omnipotent_reptiles_v1 import db
+from omnipotent_reptiles_v1 import models
+
 
 us = Blueprint('us', __name__)
 
